@@ -11,40 +11,15 @@
         }
 
         .content {
-            margin: 0 auto;
-            width: 400px;
+            background: url("images/notebook_background.jpg") no-repeat;
+            min-height: 200px;
+            margin: 20px auto;
+            width: 600px;
+            padding: 20px;
         }
 
-        .content .row {
-            margin-top: 20px;
-        }
-        .content .row span {
-            display: inline-block;
-            width: 100px;
-            text-align: left;
-        }
-
-        .content .result {
-            margin-top: 20px;
-        }
-
-        .content .result img {
-            width: 100px;
-            height: 100px;
-            float: left;
-        }
-
-        .content .result p {
-            height: 100px;
-            line-height: 100px;
-            text-align: justify;
-        }
-
-        .btn {
-            background: red;
-            border: 1px solid red;
-            padding: 10px;
-            margin-top: 20px;
+        .content h1 {
+            text-align: center;
         }
     </style>
 </head>
