@@ -21,6 +21,15 @@
         .content h1 {
             text-align: center;
         }
+
+        .list {
+            list-style: decimal inside;
+            margin: 35px 80px;
+        }
+
+        .list__item {
+            margin-top: 6px;
+        }
     </style>
 </head>
 <body>
@@ -30,6 +39,11 @@
 ?>
     <div class="content">
         <h1>Chép phạt</h1>
+        <ul class="list">
+            <li class="list__item">Em hứa sẽ làm bài tập ở nhà đầy đủ</li>
+            <li class="list__item">Em hứa sẽ làm bài tập ở nhà đầy đủ</li>
+            <li class="list__item">Em hứa sẽ làm bài tập ở nhà đầy đủ</li>
+        </ul>
     </div>
 </body>
 </html>
