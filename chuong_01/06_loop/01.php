@@ -33,16 +33,15 @@
     </style>
 </head>
 <body>
-
-<?php
-
-?>
     <div class="content">
         <h1>Chép phạt</h1>
         <ul class="list">
-            <li class="list__item">Em hứa sẽ làm bài tập ở nhà đầy đủ</li>
-            <li class="list__item">Em hứa sẽ làm bài tập ở nhà đầy đủ</li>
-            <li class="list__item">Em hứa sẽ làm bài tập ở nhà đầy đủ</li>
+            <?php
+                for($i = 0; $i < 10; $i++) {
+                    echo '<li class="list__item">Em hứa sẽ làm bài tập ở nhà đầy đủ</li>';
+                }
+            ?>
+        
         </ul>
     </div>
 </body>
