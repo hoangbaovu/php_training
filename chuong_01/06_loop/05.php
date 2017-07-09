@@ -65,6 +65,7 @@
                 } while( $i <= 4 && $flagShow == 1 );
             ?>
             <a class="btn" href="05.php?show=1">Show All</a>
+            <a class="btn" href="05.php?show=0">Show One</a>
         </div>
     </div>
 </body>
