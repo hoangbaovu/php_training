@@ -52,11 +52,19 @@
     <div class="content">
         <h1>Image gallery</h1>
         <div class="image">
-            <img src="images/nature-01.jpg" alt="">
-            <img src="images/nature-02.jpg" alt="">
-            <img src="images/nature-03.jpg" alt="">
-            <img src="images/nature-04.jpg" alt="">
-            <a class="btn" href="#">Show All</a>
+            <?php
+                $i = 1;
+
+                do {
+                    echo '<img src="images/nature-0' . $i .'.jpg" alt="">';
+                    $flagShow = 0;
+                    if( isset($_GET["show"]) ){
+                        $flagShow = $_GET["show"];
+                        $i++;
+                    }
+                } while( $i <= 4 && $flagShow == 1 );
+            ?>
+            <a class="btn" href="05.php?show=1">Show All</a>
         </div>
     </div>
 </body>
