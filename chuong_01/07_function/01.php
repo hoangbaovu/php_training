@@ -29,12 +29,18 @@
 </head>
 <body>
     <div class="content">
-        <div class="div" style="width: 300px; height: 200px">
-            <p>Box A <span>300x200</span></p>
-        </div>
-        <div class="div" style="width: 100px; height: 50px">
-            <p>Box A <span>100x50</span></p>
-        </div>
+
+    <!-- Hàm không có tham số trả về -->
+    <?php
+        function createBox(){
+            echo '<div class="div" style="width: 300px; height: 200px">';
+            echo '<p>Box A <span>300x200</span></p>';
+            echo '</div>';
+        }
+        
+        createBox();
+        createBox();
+    ?>
     </div>
 </body>
 </html>
