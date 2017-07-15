@@ -30,10 +30,9 @@
 <body>
     <div class="content">
 
-    <!-- Hàm trả về giá trị true false -->
+    <!-- Truyền tham số vào hàm -->
     <?php
-        function checkNumber(){
-            $value = 2;
+        function checkNumber($value){
             if($value % 2 == 0) {
                 return true;
             } else {
@@ -41,13 +40,12 @@
             }
         }
         
-        $result = checkNumber();
+        $result = checkNumber(2);
         if($result) {
             echo "Số Chẳn";
         } else {
             echo "Số Lẻ";
         }
-        echo $result;
     ?>
     </div>
 </body>
