@@ -65,18 +65,28 @@
 
   $score = array(6,7,5,8);
 
+  // if(!empty($students)) {
+  //   foreach($students as $key => $value) {
+  //     $name = $value["name"];
+  //     $sex  = (($value["sex"]==1) ? "Boy" : "Girl");
+  //     $score = $value["score"];
+
+  //     $total = 0;
+  //     for($i=0; $i< count($score); $i++) {
+  //       $total += $score[$i];
+  //     }
+
+  //     echo "Name: " . $name . " - sex: " . $sex . " - score: " . $total . "<br>";
+  //   }
+  // }
+
   if(!empty($students)) {
     foreach($students as $key => $value) {
       $name = $value["name"];
       $sex  = (($value["sex"]==1) ? "Boy" : "Girl");
-      $score = $value["score"];
+      $score = array_sum($value["score"]);
 
-      $total = 0;
-      for($i=0; $i< count($score); $i++) {
-        $total += $score[$i];
-      }
-
-      echo "Name: " . $name . " - sex: " . $sex . " - score: " . $total . "<br>";
+      echo "Name: " . $name . " - sex: " . $sex . " - score: " . $score . "<br>";
     }
   }
 ?>
