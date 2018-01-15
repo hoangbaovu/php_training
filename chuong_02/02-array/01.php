@@ -19,4 +19,22 @@
 
   echo $length;
 
+  // Kiểm tra một mảng có rỗng hay không
+
+  // Cách 1 - length
+
+  // if($length > 0) {
+  //   echo "Khong la mang rong";
+  // } else {
+  //   echo "Mang rong";
+  // }
+
+  // Cách 2 - empty
+
+  if(!empty($courses)) {
+    echo "Khong la mang rong";
+  } else {
+    echo "Mang rong";
+  }
+
 ?>
