@@ -28,7 +28,11 @@
   //     [1] => Item 2
   // )
 
-  foreach($courses as $key => $value) {
-    echo $key . " : " .$value . "<br>";
+  if(!empty($courses)) {
+    foreach($courses as $key => $value) {
+      echo $key . " : " .$value . "<br>";
+    }
+  } else {
+    echo "Không có mảng";
   }
 ?>
