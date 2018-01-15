@@ -33,31 +33,50 @@
   //             ),
   // );
 
-  echo '<pre>';
-  print_r($students["SV01"]["name"]);
-  echo '</pre>';
+  // echo '<pre>';
+  // print_r($students["SV01"]["name"]);
+  // echo '</pre>';
 
-  // Tên sinh viên 01
+  // // Tên sinh viên 01
 
-  echo $students["SV01"]["name"];
+  // echo $students["SV01"]["name"];
 
-  echo "<br>";
+  // echo "<br>";
 
-  // Điểm môn thứ 2 của SV02
+  // // Điểm môn thứ 2 của SV02
 
-  echo $students["SV02"]["score"][1];
+  // echo $students["SV02"]["score"][1];
 
-  echo "<br>";
+  // echo "<br>";
 
-  // Thay đổi tên của SV03 thành Anne
+  // // Thay đổi tên của SV03 thành Anne
 
-  $students["SV03"]["name"] = "Anne";
+  // $students["SV03"]["name"] = "Anne";
 
-  // Thay đổi điểm của SV03 môn 2 thành 10;
+  // // Thay đổi điểm của SV03 môn 2 thành 10;
 
-  $studens["SV03"]["score"][1] = 10;
+  // $studens["SV03"]["score"][1] = 10;
 
-  echo '<pre>';
-  print_r($students);
-  echo '</pre>';
+  // echo '<pre>';
+  // print_r($students);
+  // echo '</pre>';
+
+  // Duyệt qua mảng
+
+  $score = array(6,7,5,8);
+
+  if(!empty($students)) {
+    foreach($students as $key => $value) {
+      $name = $value["name"];
+      $sex  = (($value["sex"]==1) ? "Boy" : "Girl");
+      $score = $value["score"];
+
+      $total = 0;
+      for($i=0; $i< count($score); $i++) {
+        $total += $score[$i];
+      }
+
+      echo "Name: " . $name . " - sex: " . $sex . " - score: " . $total . "<br>";
+    }
+  }
 ?>
