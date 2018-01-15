@@ -19,5 +19,16 @@
   print_r($courses);
   echo '</pre>';
 
-  echo $courses[0];
+  // Array
+  // (
+  //     [php] => PHP
+  //     [zend] => Zend
+  //     [laravel] => Laravel
+  //     [0] => Item 1
+  //     [1] => Item 2
+  // )
+
+  foreach($courses as $key => $value) {
+    echo $key . " : " .$value . "<br>";
+  }
 ?>
