@@ -30,12 +30,36 @@
 
   // echo $courses[1];
 
+  // if(!empty($courses)) {
+  //   for($i=0; $i < count($courses); $i++) {
+  //     echo $courses[$i] . "<br>";
+  //   }
+  // } else {
+  //   echo "Không có phần tử";
+  // }
+
+  echo '<pre>';
+  print_r($courses);
+  echo '</pre>';
+
+  // foreach
+
   if(!empty($courses)) {
-    for($i=0; $i < count($courses); $i++) {
-      echo $courses[$i] . "<br>";
+    foreach($courses as $key => $value) {
+      echo $value . "<br>";
     }
   } else {
     echo "Không có phần tử";
   }
+
+  /*
+    Array
+    (
+        [0] => PHP
+        [1] => Zend
+        [2] => Laravel
+    )
+  */
+
 
 ?>
