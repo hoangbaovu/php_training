@@ -13,9 +13,8 @@
   $courses[]  = "Zend";
   $courses[]  = "Laravel";
 
-
-  echo "<pre>";
+  echo '<pre>';
   print_r($courses);
-  echo "</pre>";
+  echo '</pre>';
 
 ?>
