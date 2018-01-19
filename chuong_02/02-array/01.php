@@ -8,7 +8,7 @@
   - Trong PHP có 3 loại mảng: mảng số nguyên, mảng kết hợp và mảng đa chiều.
 */
 
-  $courses    = array();
+  $courses    = [];
   $courses[]  = "PHP";
   $courses[]  = "Zend";
   $courses[]  = "Laravel";
@@ -23,18 +23,18 @@
 
   // Cách 1 - length
 
-  // if($length > 0) {
-  //   echo "Khong la mang rong";
+  // if ($length > 0) {
+  //   echo 'Khong la mang rong';
   // } else {
-  //   echo "Mang rong";
+  //   echo 'Mang rong';
   // }
 
   // Cách 2 - empty
 
-  if(!empty($courses)) {
-    echo "Khong la mang rong";
+  if (! empty($courses)) {
+    echo 'Khong la mang rong';
   } else {
-    echo "Mang rong";
+    echo 'Mang rong';
   }
 
 ?>

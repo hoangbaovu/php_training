@@ -12,26 +12,29 @@
 
   // Cách 1
 
-  $students = [];
-  $students["SV01"] = ["name" => "John", "sex" => 1, "score" => [4, 5, 6]];
-  $students["SV02"] = ["name" => "Doe", "sex" => 0, "score" => [5, 6, 7]];
-  $students["SV03"] = ["name" => "Marry", "sex" => 0, "score" => [7, 8, 9]];
+  // $students = [];
+  // $students["SV01"] = ["name" => "John", "sex" => 1, "score" => [4, 5, 6]];
+  // $students["SV02"] = ["name" => "Doe", "sex" => 0, "score" => [5, 6, 7]];
+  // $students["SV03"] = ["name" => "Marry", "sex" => 0, "score" => [7, 8, 9]];
 
   // Cách 2
-  // $student = array(
-  //   "SV01" => array("name"  => "John",
-  //                   "sex"   => 1,
-  //                   "score" => array(4, 5, 6)
-  //             ),
-  //   "SV02" => array("name"  => "Doe",
-  //                   "sex"   => 0,
-  //                   "score" => array(5, 6, 7)
-  //             ),
-  //   "SV03" => array("name"  => "Marry",
-  //                   "sex"   => 0,
-  //                   "score" => array(7, 8, 9)
-  //             ),
-  // );
+  $students = [
+    "SV01" => [
+                "name"  => "John",
+                "sex"   => 1,
+                "score" => [4, 5, 6],
+              ],
+    "SV02" => [
+                "name"  => "Doe",
+                "sex"   => 0,
+                "score" => [5, 6, 7],
+              ],
+    "SV03" => [
+                "name"  => "Marry",
+                "sex"   => 0,
+                "score" => [7, 8, 9],
+              ],
+  ];
 
   // echo '<pre>';
   // print_r($students["SV01"]["name"]);
@@ -65,14 +68,14 @@
 
   $score = [6, 7, 8, 9];
 
-  // if(!empty($students)) {
-  //   foreach($students as $key => $value) {
+  // if (! empty($students)) {
+  //   foreach ($students as $key => $value) {
   //     $name = $value["name"];
   //     $sex  = (($value["sex"]==1) ? "Boy" : "Girl");
   //     $score = $value["score"];
 
   //     $total = 0;
-  //     for($i=0; $i< count($score); $i++) {
+  //     for ($i=0; $i< count($score); $i++) {
   //       $total += $score[$i];
   //     }
 
@@ -80,13 +83,13 @@
   //   }
   // }
 
-  if (!empty($students)) {
+  if (! empty($students)) {
     foreach ($students as $key => $value) {
       $name = $value["name"];
       $sex  = (($value["sex"]==1) ? "Boy" : "Girl");
       $score = array_sum($value["score"]);
 
-      echo "Name: " . $name . " - sex: " . $sex . " - score: " . $score . "<br>";
+      echo 'Name: ' . $name . ' - Sex: ' . $sex . ' - Score: ' . $score . '<br>';
     }
   }
 ?>

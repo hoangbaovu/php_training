@@ -12,26 +12,26 @@
 
   // Cách 1
 
-  // $courses    = array();
+  // $courses    = [];
   // $courses[]  = "PHP";
   // $courses[]  = "Zend";
   // $courses[]  = "Laravel";
 
   // // Cách 2
 
-  // $courses    = array();
+  // $courses    = [];
   // $courses[0]  = "PHP";
   // $courses[1]  = "Zend";
   // $courses[2]  = "Laravel";
 
   // Cách 3
 
-  $courses    = array("PHP", "Zend", "Laravel");
+  $courses = ["PHP", "Zend", "Laravel"];
 
   // echo $courses[1];
 
-  // if(!empty($courses)) {
-  //   for($i=0; $i < count($courses); $i++) {
+  // if(! empty($courses)) {
+  //   for ($i=0; $i < count($courses); $i++) {
   //     echo $courses[$i] . "<br>";
   //   }
   // } else {
@@ -44,12 +44,12 @@
 
   // foreach
 
-  if(!empty($courses)) {
-    foreach($courses as $key => $value) {
-      echo $value . "<br>";
+  if (! empty($courses)) {
+    foreach ($courses as $key => $value) {
+      echo $value . '<br>';
     }
   } else {
-    echo "Không có phần tử";
+    echo 'Không có phần tử';
   }
 
   /*
@@ -60,6 +60,4 @@
         [2] => Laravel
     )
   */
-
-
 ?>

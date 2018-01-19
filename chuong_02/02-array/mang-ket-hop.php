@@ -40,7 +40,7 @@
   //     [1] => Item 2
   // )
 
-  if (!empty($courses)) {
+  if (! empty($courses)) {
     foreach ($courses as $key => $value) {
       echo $key . " : " .$value . "<br>";
     }
