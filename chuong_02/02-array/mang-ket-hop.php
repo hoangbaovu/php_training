@@ -13,7 +13,19 @@
   // $courses[]            = "Item 1";   // key: 0
   // $courses[]            = "Item 2";   // key: 1
 
-  $courses = array("php" => "PHP", "zend" => "Zend", "laravel" => "Laravel", 0 => "Item 1", 1 => "Item 2" );
+
+  // Bad
+
+  // $courses = array("php" => "PHP", "zend" => "Zend", "laravel" => "Laravel", 0 => "Item 1", 1 => "Item 2" );
+
+  // Good
+  $courses = [
+    "php" => "PHP",
+    "zend" => "Zend",
+    "laravel" => "Laravel",
+    0 => "Item 1",
+    1 => "Item 2",
+  ];
 
   echo '<pre>';
   print_r($courses);
@@ -28,8 +40,8 @@
   //     [1] => Item 2
   // )
 
-  if(!empty($courses)) {
-    foreach($courses as $key => $value) {
+  if (!empty($courses)) {
+    foreach ($courses as $key => $value) {
       echo $key . " : " .$value . "<br>";
     }
   } else {

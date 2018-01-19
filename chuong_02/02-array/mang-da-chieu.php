@@ -12,10 +12,10 @@
 
   // Cách 1
 
-  $students = array();
-  $students["SV01"] = array("name" => "John", "sex" => 1, "score" => array(4, 5, 6));
-  $students["SV02"] = array("name" => "Doe", "sex" => 0, "score" => array(5, 6, 7));
-  $students["SV03"] = array("name" => "Marry", "sex" => 0, "score" => array(7, 8, 9));
+  $students = [];
+  $students["SV01"] = ["name" => "John", "sex" => 1, "score" => [4, 5, 6]];
+  $students["SV02"] = ["name" => "Doe", "sex" => 0, "score" => [5, 6, 7]];
+  $students["SV03"] = ["name" => "Marry", "sex" => 0, "score" => [7, 8, 9]];
 
   // Cách 2
   // $student = array(
@@ -63,7 +63,7 @@
 
   // Duyệt qua mảng
 
-  $score = array(6,7,5,8);
+  $score = [6, 7, 8, 9];
 
   // if(!empty($students)) {
   //   foreach($students as $key => $value) {
@@ -80,8 +80,8 @@
   //   }
   // }
 
-  if(!empty($students)) {
-    foreach($students as $key => $value) {
+  if (!empty($students)) {
+    foreach ($students as $key => $value) {
       $name = $value["name"];
       $sex  = (($value["sex"]==1) ? "Boy" : "Girl");
       $score = array_sum($value["score"]);
