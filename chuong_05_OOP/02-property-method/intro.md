@@ -26,3 +26,15 @@ Phương thức cũng giống như hàm, nhưng là hàm riêng của lớp
 
 *Đặc điểm: lông ngắn, màu trắng
 *Hành động: ăn, ngủ, làm nũng
+
+#Xây dựng Class với các phương thức và thuộc tính
+
+Chúng ta đã học qua các kiểu dữ liệu như INT, STRING, FLOAT để mô tả số nguyên,
+chuỗi và số thực -> có kiểu dữ liệu mới -> mô tả kiểu dữ liệu mới bằng cách nào
+-> Định nghĩa kiểu dữ liệu mới này thông qua Class
+
+Trước khi xây dựng một Class, chúng ta cần xác định2 vấn đề sau:
+*Thuộc tính
+*Phương thức
+
+Xây dựng Class ConMeo với các phương thức và thuộc tính của nó!
