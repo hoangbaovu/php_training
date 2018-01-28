@@ -9,11 +9,13 @@ class User
 
     public function __construct()
     {
-        echo '<br>' . __METHOD__;
+        $this->name = 'John';
+        $this->pass = '123456';
+        $this->fullname = 'John Doe';
     }
 
     public function __destruct()
     {
-        echo '<br>' . __METHOD__;
+        $_SESSION['userA'] = serialize($this);
     }
 }
