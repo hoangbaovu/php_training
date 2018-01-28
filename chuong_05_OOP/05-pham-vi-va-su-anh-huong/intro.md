@@ -21,3 +21,9 @@ là đại diện cho cách khởi tạo lớp hiện thời và thường đư�
 ## Parent
 
 Là đại diện của lớp cha và thường được sử dụng gọi đến biến số có khóa static hay phương thức nào đó trong lớp cha của lớp hiện tại
+
+# const (Constant)
+
+Định nghĩa các biến có giá trị không thay đổi bằng từ khóa const
+
+Để truy cập vào lấy giá trị chúng ta sử dụng toán tử ::
