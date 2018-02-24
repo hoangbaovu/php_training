@@ -1,5 +1,7 @@
 <?php
 
+    // 24 PHP Array - 05 Vấn đề 05 - 06
+
     $course = [
         "PHP",
         "Angular",
