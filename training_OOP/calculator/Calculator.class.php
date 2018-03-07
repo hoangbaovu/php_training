@@ -20,17 +20,44 @@ class Calculator
 
     public function calculate()
     {
-        if ($this->operator == "+") {
-            $this->result = $this->firstNumber + $this->secondNumber;
-        } elseif ($this->operator == "-") {
-            $this->result = $this->firstNumber - $this->secondNumber;
-        } else {
-            $this->result = "Error";
+        // if ($this->operator == "+") {
+        //     $this->result = $this->firstNumber + $this->secondNumber;
+        // } elseif ($this->operator == "-") {
+        //     $this->result = $this->firstNumber - $this->secondNumber;
+        // } else {
+        //     $this->result = "Error";
+        // }
+
+        switch($this->operator) {
+            case "+":
+                $this->result = $this->firstNumber + $this->secondNumber;
+                break;
+            case "-":
+                $this->result = $this->firstNumber - $this->secondNumber;
+                break;
+            case "*":
+                $this->result = $this->firstNumber * $this->secondNumber;
+                break;
+            case "/":
+                $this->result = $this->firstNumber / $this->secondNumber;
+                break;
+            default:
+                break;
         }
     }
 
     public function getResult()
     {
         return $this->result;
+    }
+
+    public function getFirstNumber()
+    {
+        return $this->firstNumber;
+    }
+
+    public function getSecondNumber()
+    {
+        return $this->secondNumber;
     }
 }

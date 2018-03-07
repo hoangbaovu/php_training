@@ -1,0 +1,22 @@
+.result {
+    background: red;
+    padding: 20px;
+    float: right;
+}
+
+.wrap {
+    border: 1px solid #007bff;
+    padding: 30px;
+    margin-top: 5em;
+    position: relative;
+}
+
+.wrap::after {
+    background: #fff;
+    content: "Simple Calculate OOP";
+    font-size: 1.3em;
+    padding: 0 10px;
+    position: absolute;
+    top: -17px;
+    left: 20px;
+}

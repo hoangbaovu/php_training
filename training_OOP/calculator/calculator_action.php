@@ -1,4 +1,5 @@
 <?php
+require_once 'Calculator.class.php';
 
 if (isset($_POST['calculation'])) {
     $firstNumber = $_POST["firstNumber"];
@@ -9,5 +10,5 @@ if (isset($_POST['calculation'])) {
     $caculator->setNumber($firstNumber, $secondNumber);
     $caculator->setOperator($operator);
     $caculator->calculate();
-    echo $caculator->getResult();
+    // echo $caculator->getResult();
 }
